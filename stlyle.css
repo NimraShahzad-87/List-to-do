@@ -1,0 +1,103 @@
+body {
+    /* background-color: #a7a0eb; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.app-container {
+    width: 700px;
+    background: #ea70d2;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+header {
+    background: #eba0b7;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+.task-input-container {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background: #a7a0eb;
+    color: black;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #92919a;
+}
+
+.task-list {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.task-card {
+    background: #3588c7;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.task-card .task-actions {
+    display: flex;
+    align-items: center;
+}
+
+.task-card button {
+    background: #ead995;
+    margin-left: 5px;
+    font-size: 16px;
+}
+
+.task-card button.edit {
+    background:#ead995;
+}
+
+.task-card button:hover {
+    opacity: 0.8;
+}
+
+.task-card button:disabled {
+    
+    cursor: not-allowed;
+}
+
+
+
+
